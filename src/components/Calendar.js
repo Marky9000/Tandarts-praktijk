@@ -1,5 +1,5 @@
 import React from "react";
-import "./Calendar.css";
+import "../css/Calendar.css";
 import DayInMonth from "./DayInMonth";
 
 const divideByDay = appointments => {
@@ -14,14 +14,18 @@ const divideByDay = appointments => {
   return appointmentsByDay;
 };
 
-export default ({ appointments }) => {
+const Calendar = ({ appointments, deleteAppointment, changeAppointment }) => {
   const appointmentsByDay = divideByDay(appointments);
 
   const daysInMonthJSX = Object.values(
     appointmentsByDay
-  ).map((appointmentsInDay, index) => (
-    <DayInMonth appointments={appointmentsInDay} key={index} />
-  ));
+  ).map((appointmentsInDay, index) => {
+    return (
+      <DayInMonth
+        changeAppointment={changeAppointment}
+        appointments={appointmentsInDay} key={index} deleteAppointment={deleteAppointment} />
+    )
+  });
 
   return (
     <div className="calendarview">
@@ -36,3 +40,5 @@ export default ({ appointments }) => {
     </div>
   );
 };
+
+export default Calendar

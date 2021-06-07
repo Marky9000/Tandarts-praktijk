@@ -23,7 +23,7 @@
   margin-bottom: 0.5rem;
   border: 1px solid lightblue;
   padding: 0.5rem;
-  background-color: lightyellow;
+  background-color: rgb(247, 247, 229);
 }
 
 .calendarview .patient {
@@ -31,5 +31,5 @@
 }
 
 .calendarview .time {
-  color: yellowgreen;
+  color: rgb(74, 79, 167);
 }

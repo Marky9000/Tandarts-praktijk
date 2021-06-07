@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form{
+ text-align: center;
+  width:25%;
+  min-width: 280px;
+  padding:3%;
+  background-color:lightblue;
+
+} 
+.foot{
+  position:absolute;
+  font-size: 12px;
+  right:-100px;
+  top:70%;
+transform: rotate(-90deg)
+}
+input,form > select{
+ background-color:lightyellow;
+ margin:2%;
+ padding:3%;
+ width:90%
+}
+
+h2{
+  color:lightyellow;
+  padding:1px
+}
+
+h3{
+  color:lightslategray;
+}
+div{
+  padding:4px
+}
+button{
+  background-color: deepskyblue;
+  margin:5%;
+  padding:3%;
+  width:90%;
+}
+
+body {
+  margin: 2rem;
+  background-color: lightslategray;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 4rem;
+}
+
+nav {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: greenyellow;
+
+}
+.sick {
+  background-color: rgb(245, 161, 161);
+  /* border: solid red 2px; */
+
+}
+a,
+a:focus,
+a:visited {
+  color: darksalmon;
+  outline: none;
+}
+
+table {
+  text-align: left;
+  border: 1px solid lightblue;
+  background-color: lightyellow;
+  
+}
+th, td {
+text-align: left;
+padding:4px; 
+margin:2%;
+width:10%
+}
+
+tr:nth-child(even) {
+  background-color: rgb(247, 227, 186);
+}
